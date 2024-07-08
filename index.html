@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Radius Shoot</title>
+	<link rel="shortcut icon" id="favicon" />
+	<link rel="stylesheet" hrfe="style.css">
+	<style>
+		body {
+			background: #080808;
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+		}
+
+		#wrap {
+			background: #222;
+			box-shadow: inset 0 0 0 1px #404040, 0 0 0 1px #000;
+			left: 50%;
+			opacity: 0;
+			padding: 0;
+			position: absolute;
+			top: 50%;
+			transition: opacity 1.5s;
+			user-zoom: none,hidden;
+		}
+
+		.loaded #wrap {
+			opacity: 1;
+		}
+
+		#wrap-inner {
+			background: black;
+			overflow: hidden;
+			position: relative;
+		}
+
+		canvas {
+			cursor: crosshair;
+			display: block;
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+
+		.joystick {
+			width: 120px;
+			height: 120px;
+			position: absolute;
+			top: calc(60% - 60px);
+		}
+
+		#left-joystick.joystick {
+			left: 50px;
+		}
+
+		#right-joystick.joystick {
+			right: 50px;
+		}
+	
+	</style>
+</head>
+<body>
+	<div id="left-joystick" class="joystick"></div>
+	<div id="right-joystick" class="joystick"></div>
+	<div id="wrap">
+		<div id="wrap-inner">
+			<canvas id="cbg1"></canvas>
+			<canvas id="cbg2"></canvas>
+			<canvas id="cbg3"></canvas>
+			<canvas id="cbg4"></canvas>
+			<canvas id="cmg"></canvas>
+			<canvas id="cfg"></canvas>
+		</div>
+	</div>
+	<script>var $ = {};</script>
+	<script src="touch-compat.js"></script>
+	<script src="jsfxr.js"></script>
+	<script src="util.js"></script>
+	<script src="storage.js"></script>
+	<script src="definitions.js"></script>
+	<script src="audio.js"></script>
+	<script src="text.js"></script>
+	<script src="hero.js"></script>
+	<script src="enemy.js"></script>
+	<script src="bullet.js"></script>
+	<script src="explosion.js"></script>
+	<script src="powerup.js"></script>
+	<script src="particle.js"></script>
+	<script src="particleemitter.js"></script>
+	<script src="textpop.js"></script>
+	<script src="levelpop.js"></script>
+	<script src="button.js"></script>
+	<script src="game.js"></script>
+</body>
+
+</html>
