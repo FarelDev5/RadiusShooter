@@ -1,23 +1,3 @@
-// ads //
-
-document.addEventListener("DOMContentLoaded", function() {
- fetch('ads.html')
-  .then(response => response.text())
-  .then(html => {
-
-   const bottomDiv = document.createElement('div');
-   bottomDiv.id = 'bottomDiv'; // memberikan id untuk styling CSS
-
-   // Set isi dari file HTML yang diambil
-   bottomDiv.innerHTML = html;
-
-   // Tambahkan div ke dalam body
-   document.body.appendChild(bottomDiv);
-  })
-  .catch(error => console.log('Ada kesalahan:', error));
-});
-//end ads//
-
 var screeny = window.innerHeight;
 var screenx = window.innerWidth;
 $.init = function() {
