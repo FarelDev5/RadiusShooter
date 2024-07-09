@@ -1,3 +1,4 @@
+const bottomDiv = document.createElement('div');
 var screeny = window.innerHeight;
 var screenx = window.innerWidth;
 $.init = function() {
